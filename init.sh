@@ -1,16 +1,15 @@
 #!/bin/bash
-
-for dir in */
+for DIR in */
 do
-    dir=${dir%*/}
+    DIR=${DIR%*/}
 
-    if [ ! -f .git/hooks/${dir} ]; then
-        echo "Creating symbolic link for ${dir}"
+    if [ ! -f .git/hooks/${DIR} ]; then
+        echo "Creating symbolic link for ${DIR}"
 
-        file=${dir}/${dir}.sh
+        FILE=${DIR}/${DIR}.sh
 
-        chmod +x ${file}
-        ln ${file} .git/hooks/${dir}
+        chmod +x ${FILE}
+        ln ${FILE} .git/hooks/${DIR}
     fi
 
 done
