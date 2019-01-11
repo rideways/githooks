@@ -5,6 +5,7 @@ This is designed to be a simple repo to provide convenience git hooks.
 ## How to run
 1. From the root of your repository run `git submodule add https://github.com/rideways/githooks`
 2. Then run `sh githoooks/init.sh`  (Also from the root of the repo).
+
 e.g. a repository with `githooks` as a submodule:
 
 ```
